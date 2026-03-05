@@ -13,8 +13,7 @@ public class Principal {
 		
 		ArticuloGimnasio artG2= new ArticuloGimnasio("Articulo GYM 2",20);
 		System.out.println(artG2.toString());
-		
-
+		System.out.println(artG2.convierteEnGramos()+"gr");
 	}
 
 }

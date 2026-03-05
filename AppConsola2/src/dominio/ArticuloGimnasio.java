@@ -4,6 +4,15 @@ package dominio;
 public class ArticuloGimnasio extends Articulo {
 	
  private int peso;
+ private static final int gramos=1000; //declara una constante de clase
+
+ 
+ public int convierteEnGramos() {
+
+  return peso*gramos;
+ }
+ 
+ 
  
  //constructores
  public ArticuloGimnasio() {
