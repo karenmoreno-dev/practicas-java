@@ -9,25 +9,30 @@ public class Principal {
 
 	public static void main (String[] args) {
 		
-		Animal animal =new Animal("Animal");
-		Gato gato=new Gato("luna");
-		Perro perro= new Perro("Huesos","Galgo");
+		//Animal animal =new Animal("Animal");
 		
-	/*	System.out.println(animal.toString());
-		System.out.println(gato.toString());
-		System.out.println(perro.toString());
+		// Una clase abstracta no se puede instanciar directamente,
+		// pero sí permite crear objetos de las clases que la heredan.
 		
-		*/
+		Animal gato=new Gato("luna");
+		Animal perro= new Perro("Huesos","Galgo");
+		
+	//	System.out.println(animal.toString());
+		System.out.println(gato.toString()+" HABILIDADES: "+ gato.habilidades());
+		System.out.println(perro.toString()+" HABILIDADES: "+ perro.habilidades());
+		
+		
 		
 		//un objeto de la clase hija se puede guardar dentro de un objeto de la clase padre 
 		
-		Animal[] animales= new Animal[3];// distintos tipos de animales convivan en la misma colección
-		animales[0]=animal;
+		/*Animal[] animales= new Animal[3]; // distintos tipos de animales convivan en la misma colección
+		
+		//animales[0]=animal;
 		animales[1]=gato;
 		animales[2]=perro;
 		
 		for(Animal a: animales) {
 			System.out.println(a.toString());
-		}
+		}*/
 	}
 }

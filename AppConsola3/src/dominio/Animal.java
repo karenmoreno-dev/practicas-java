@@ -1,6 +1,6 @@
 package dominio;
 
-public class Animal {
+public abstract class Animal {
  
 	private String nombre;
     
@@ -26,6 +26,7 @@ public String toString() {
 	return "Es un animal, su nobre es:" + nombre ;
 }
 
-
+//declaro metodo abstracto 
+public abstract String habilidades();
  
 }

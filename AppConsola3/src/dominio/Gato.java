@@ -20,5 +20,11 @@ public class Gato extends Animal{
 
 	}
 
+	@Override
+	public String habilidades() {
+		
+		return "Los gatos tienen flexibilidad y elasticidad";
+	}
+
 	
 }
